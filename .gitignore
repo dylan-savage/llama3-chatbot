@@ -21,6 +21,7 @@ env/
 *.safetensors
 *.pth
 empathetic_model/
+processed_dataset.json
 logs/
 
 # Jupyter / IPython

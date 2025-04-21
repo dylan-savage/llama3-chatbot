@@ -43,7 +43,7 @@ Frontend runs on `http://localhost:3000`.
 
 This project includes a full training pipeline using the [EmpatheticDialogues dataset](https://huggingface.co/datasets/Estwld/empathetic_dialogues_llm):
 
-- `emp_dia.py` – preprocesses and formats the dataset (already done)
+- `emp_dia.py` – preprocesses and formats the dataset -- run the file to pre-process the data
 - `fineTune.py` – trains LLaMA 3.2-1B using Hugging Face `Trainer`
 
 ### GPU + Model Note
@@ -73,19 +73,3 @@ In `app.py` (if you want to use model in the frontend):
 USE_FINE_TUNED_MODEL = True
 ```
 Your trained model should be saved to: `./empathetic_model/`.
-
----
-
-## Project Structure
-
-```
-├── backend/
-│   ├── app.py               # Flask server
-│   ├── llama3.py            # Chatbot logic + sentiment
-│   ├── sentiment_analyzer.py
-│   ├── emp_dia.py           # Dataset preprocessing
-│   ├── fineTune.py          # Fine-tuning script
-├── frontend/
-│   ├── App.js, Chatbox.js, etc.
-│   └── InputBox.css, Chatbox.css, etc.
-```
