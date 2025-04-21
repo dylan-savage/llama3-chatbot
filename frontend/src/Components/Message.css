@@ -1,0 +1,53 @@
+.message {
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 75%;
+    word-wrap: break-word;
+    margin: 10px 0; /* Add spacing between messages */
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+   @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .message.user {
+    background-color: #d1e7dd; 
+    align-self: flex-end;
+    border: 1px solid #b7dbce; 
+  }
+  
+  .message.bot {
+    background-color: #f8d7da;
+    align-self: flex-start;
+    border: 1px solid #e5b8bf; 
+  }
+
+  .sentiment-info {
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  .sentiment-scores {
+    display: flex;
+    gap: 10px;
+    margin-top: 2px;
+  }
+
+  .loading {
+    align-self: center;
+    color: #666;
+    font-style: italic;
+    padding: 10px;
+  }
+
+  
+

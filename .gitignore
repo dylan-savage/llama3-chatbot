@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.log
+*.sqlite3
+.env
+*.env
+.DS_Store
+
+# Virtual environments
+chatbot_env/
+venv/
+env/
+
+# Model checkpoints & training artifacts
+*.ckpt
+*.h5
+*.pt
+*.bin
+*.onnx
+*.safetensors
+*.pth
+empathetic_model/
+logs/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# VSCode or JetBrains project files
+.vscode/
+.idea/
+
+# Node / React frontend
+node_modules/
+build/
+dist/
+npm-debug.log
+yarn-error.log
